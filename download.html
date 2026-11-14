@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Little World</title>
+<style>
+  :root { --sky: #9fd6ff; --grass: #7cc95a; --ink: #2f3138; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 24px; padding: 24px 16px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink);
+    background: linear-gradient(var(--sky) 65%, var(--grass) 65%);
+    text-align: center;
+  }
+  h1 { margin: 0; font-size: clamp(32px, 7vw, 56px); color: #ffe066;
+       text-shadow: 3px 3px 0 #6b3fa0, -2px -2px 0 #6b3fa0, 2px -2px 0 #6b3fa0, -2px 2px 0 #6b3fa0; }
+  .download {
+    display: inline-block; padding: 22px 36px; border-radius: 40px; border: 6px solid #fff;
+    background: #4caf50; color: #fff; font-size: clamp(22px, 5vw, 32px); font-weight: 800;
+    text-decoration: none; box-shadow: 0 6px 0 #2e7d32;
+  }
+  .download:active { transform: translateY(4px); box-shadow: 0 2px 0 #2e7d32; }
+  .info { background: rgba(255, 255, 255, 0.85); border-radius: 16px; padding: 14px 20px; max-width: 520px; font-size: 16px; line-height: 1.5; }
+  .info p { margin: 6px 0; }
+  a.play { color: #1f5fbf; font-weight: 700; }
+</style>
+</head>
+<body>
+  <h1>Little World Adventures</h1>
+  <a class="download" href="little-world.apk" download>Download Little World (Android)</a>
+  <div class="info">
+    <p><strong>Version 0.24</strong> (build 24) &middot; built 2026-11-14 &middot; 62 MB</p>
+    <p>After downloading, open the file and allow installing from this source if Android asks.</p>
+    <p>No Android? <a class="play" href="./">Play in the browser instead</a>.</p>
+  </div>
+</body>
+</html>
